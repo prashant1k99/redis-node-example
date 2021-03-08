@@ -1,0 +1,15 @@
+### Getting all ship Lists - Cache Enable
+
+GET http://localhost:5000/ship/list
+
+### Getting all ship Lists - Cache Disable
+
+GET http://localhost:5000/ship/list/withoutCache
+
+### Get ship with id - Cahce Enable
+
+GET http://localhost:5000/ship/AMERICANCHAMPION
+
+### Get ship with id - Cache Disable
+
+GET http://localhost:5000/ship/AMERICANCHAMPION/withoutCache

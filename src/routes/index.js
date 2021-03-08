@@ -8,6 +8,7 @@ const launchRoute = require('./launches')
 const missionRoute = require('./missions')
 const payloadRoute = require('./payloads')
 const roadsterRoute = require('./roadster')
+const shipRoute = require('./ships')
 
 module.exports = {
   rocketRoutes,
@@ -19,5 +20,6 @@ module.exports = {
   launchRoute,
   missionRoute,
   payloadRoute,
-  roadsterRoute
+  roadsterRoute,
+  shipRoute
 }

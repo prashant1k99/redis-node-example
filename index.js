@@ -12,7 +12,8 @@ const {
   launchRoute,
   missionRoute,
   payloadRoute,
-  roadsterRoute
+  roadsterRoute,
+  shipRoute
 } = require('./src/routes')
 
 const app = express()
@@ -31,6 +32,7 @@ app.use('/launch', launchRoute)
 app.use('/mission', missionRoute)
 app.use('/payload', payloadRoute)
 app.use('/roadster', roadsterRoute)
+app.use('/ship', shipRoute)
 
 app.use('*', (_, res) => {
   res.send('Hello')
