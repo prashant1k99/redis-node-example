@@ -1,6 +1,9 @@
+require('dotenv/config')
 const express = require('express')
 const { GET_CACHE, SET_CACHE, http } = require('../../helpers')
 const router = express.Router()
+
+const CACHE_TIME = process.env.CACHE_TIME || 900
 
 router.get('/list/withoutCache', async (_, res) => {
   try {
@@ -23,7 +26,7 @@ router.get('/list', async (req, res) => {
       'payloads',
       JSON.stringify(respone.data),
       'EX',
-      900
+      CACHE_TIME
     )
     res.status(200).json(respone.data)
   } catch (err) {
@@ -52,7 +55,7 @@ router.get('/:payloadId', async (req, res) => {
       `payload_${req.params.payloadId}`,
       JSON.stringify(respone.data),
       'EX',
-      900
+      CACHE_TIME
     )
     res.status(200).json(respone.data)
   } catch (err) {
