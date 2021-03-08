@@ -1,0 +1,5 @@
+### Getting all Rocket Lists
+
+GET http://localhost:5000/rocket/list
+
+###
