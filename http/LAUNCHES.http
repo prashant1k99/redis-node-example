@@ -1,0 +1,47 @@
+### Getting all launches Lists - Cache Enable
+
+GET http://localhost:5000/launch/list
+
+### Getting all launches Lists - Cache Disable
+
+GET http://localhost:5000/launch/list/withoutCache
+
+### Get launches with id - Cahce Enable
+
+GET http://localhost:5000/launch/1
+
+### Get launches with id - Cache Disable
+
+GET http://localhost:5000/launch/1/withoutCache
+
+### Get Past launchs - Cahce Enable
+
+GET http://localhost:5000/launch/past
+
+### Get Past launchs - Cache Disable
+
+GET http://localhost:5000/launch/past/withoutCache
+
+### Get Upcoming launchs - Cahce Enable
+
+GET http://localhost:5000/launch/upcoming
+
+### Get Upcoming launchs - Cache Disable
+
+GET http://localhost:5000/launch/upcoming/withoutCache
+
+### Get Latest launches - Cache Enable
+
+GET http://localhost:5000/launch/latest
+
+### Get Latest launches  - Cache Disable
+
+GET http://localhost:5000/launch/latest/withoutCache
+
+### Get next launchs - Cahce Enable
+
+GET http://localhost:5000/launch/next
+
+### Get next launchs - Cache Disable
+
+GET http://localhost:5000/launch/next/withoutCache

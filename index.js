@@ -8,7 +8,8 @@ const {
   dragonRoutes, 
   coreRoutes, 
   historyRoute, 
-  landpadRoute
+  landpadRoute,
+  launchRoute
 } = require('./src/routes')
 
 const app = express()
@@ -23,6 +24,7 @@ app.use('/dragon', dragonRoutes)
 app.use('/core', coreRoutes)
 app.use('/history', historyRoute)
 app.use('/landpad', landpadRoute)
+app.use('/launch', launchRoute)
 
 app.use('*', (req, res) => {
   res.send('Hello')
