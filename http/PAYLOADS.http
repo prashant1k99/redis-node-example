@@ -1,0 +1,15 @@
+### Getting all payload Lists - Cache Enable
+
+GET http://localhost:5000/payload/list
+
+### Getting all payload Lists - Cache Disable
+
+GET http://localhost:5000/payload/list/withoutCache
+
+### Get payload with id - Cahce Enable
+
+GET http://localhost:5000/payload/FalconSAT-2
+
+### Get payload with id - Cache Disable
+
+GET http://localhost:5000/payload/FalconSAT-2/withoutCache
