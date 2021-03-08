@@ -1,0 +1,31 @@
+### Getting all Rocket Lists - Cache Enable
+
+GET http://localhost:5000/core/list
+
+### Getting all Rocket Lists - Cache Disable
+
+GET http://localhost:5000/core/list/withoutCache
+
+### Get rocket with id - Cahce Enable
+
+GET http://localhost:5000/core/Merlin1A
+
+### Get rocket with id - Cache Disable
+
+GET http://localhost:5000/core/Merlin1A/withoutCache
+
+### Get Past cores - Cahce Enable
+
+GET http://localhost:5000/core/past
+
+### Get Past cores - Cache Disable
+
+GET http://localhost:5000/core/past/withoutCache
+
+### Get Upcoming cores - Cahce Enable
+
+GET http://localhost:5000/core/upcoming
+
+### Get Upcoming cores - Cache Disable
+
+GET http://localhost:5000/core/upcoming/withoutCache

@@ -2,7 +2,7 @@ require('dotenv').config()
 const express = require('express')
 const responseTime = require('response-time')
 
-const { rocketRoutes, capsuleRoutes, dragonRoutes } = require('./src/routes')
+const { rocketRoutes, capsuleRoutes, dragonRoutes, coreRoutes } = require('./src/routes')
 
 const app = express()
 
@@ -13,6 +13,7 @@ app.use(responseTime())
 app.use('/rocket', rocketRoutes)
 app.use('/capsule', capsuleRoutes)
 app.use('/dragon', dragonRoutes)
+app.use('/core', coreRoutes)
 
 app.use('*', (req, res) => {
   res.send('Hello')
