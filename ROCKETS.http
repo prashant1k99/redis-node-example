@@ -1,5 +1,15 @@
-### Getting all Rocket Lists
+### Getting all Rocket Lists - Cache Enable
 
 GET http://localhost:5000/rocket/list
 
-###
+### Getting all Rocket Lists - Cache Disable
+
+GET http://localhost:5000/rocket/list/withoutCache
+
+### Get rocket with id - Cahce Enable
+
+GET http://localhost:5000/rocket/starship
+
+### Get rocket with id - Cache Disable
+
+GET http://localhost:5000/rocket/starship/withoutCache
