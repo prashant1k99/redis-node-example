@@ -36,7 +36,7 @@ app.use('/roadster', roadsterRoute)
 app.use('/ship', shipRoute)
 
 app.use('*', (_, res) => {
-  res.send('Hello')
+  res.send('Hello there... Please enter a correct Route. This is a 404 Route.')
 })
 
 app.listen(PORT, () => {
