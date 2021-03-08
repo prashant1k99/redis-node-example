@@ -10,6 +10,10 @@ const client = redis.createClient({
   port: REDIS_PORT,
 })
 
+client.on("error", function(error) {
+  console.error(error);
+})
+
 const GET_CACHE = promisify(client.get).bind(client)
 const SET_CACHE = promisify(client.set).bind(client)
 
