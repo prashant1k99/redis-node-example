@@ -9,7 +9,8 @@ const {
   coreRoutes, 
   historyRoute, 
   landpadRoute,
-  launchRoute
+  launchRoute,
+  missionRoute
 } = require('./src/routes')
 
 const app = express()
@@ -25,8 +26,9 @@ app.use('/core', coreRoutes)
 app.use('/history', historyRoute)
 app.use('/landpad', landpadRoute)
 app.use('/launch', launchRoute)
+app.use('/mission', missionRoute)
 
-app.use('*', (req, res) => {
+app.use('*', (_, res) => {
   res.send('Hello')
 })
 

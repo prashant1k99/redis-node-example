@@ -5,6 +5,7 @@ const coreRoutes = require('./cores')
 const historyRoute = require('./histories')
 const landpadRoute = require('./landingPads')
 const launchRoute = require('./launches')
+const missionRoute = require('./missions')
 
 module.exports = {
   rocketRoutes,
@@ -13,5 +14,6 @@ module.exports = {
   coreRoutes,
   historyRoute,
   landpadRoute,
-  launchRoute
+  launchRoute,
+  missionRoute
 }

@@ -1,0 +1,15 @@
+### Getting all mission Lists - Cache Enable
+
+GET http://localhost:5000/mission/list
+
+### Getting all mission Lists - Cache Disable
+
+GET http://localhost:5000/mission/list/withoutCache
+
+### Get mission with id - Cahce Enable
+
+GET http://localhost:5000/mission/9D1B7E0
+
+### Get mission with id - Cache Disable
+
+GET http://localhost:5000/mission/9D1B7E0/withoutCache
