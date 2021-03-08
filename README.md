@@ -54,3 +54,21 @@ await SET_CACHE(
 )
 res.status(200).json(respone.data)
 ```
+
+### Usage of this APP:
+
+1. Take the clone of the Repository.
+```sh
+git clone https://github.com/prashant1k99/redis-node-example.git
+```
+2. Install all the dependencies for the application.
+```sh
+npm install
+```
+3. Run the local server.
+```
+npm run start
+```
+This will start the server on PORT 5000
+
+4. **ADVANCE** You can find the http files for the [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client) plugin for VS Code in [`http`](https://github.com/prashant1k99/redis-node-example/tree/master/http) folder
