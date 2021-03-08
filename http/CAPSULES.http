@@ -1,0 +1,31 @@
+### Getting all Rocket Lists - Cache Enable
+
+GET http://localhost:5000/capsule/list
+
+### Getting all Rocket Lists - Cache Disable
+
+GET http://localhost:5000/capsule/list/withoutCache
+
+### Get rocket with id - Cahce Enable
+
+GET http://localhost:5000/capsule/C101
+
+### Get rocket with id - Cache Disable
+
+GET http://localhost:5000/capsule/C101/withoutCache
+
+### Get Past Capsules - Cahce Enable
+
+GET http://localhost:5000/capsule/past
+
+### Get Past Capsules - Cache Disable
+
+GET http://localhost:5000/capsule/past/withoutCache
+
+### Get Upcoming Capsules - Cahce Enable
+
+GET http://localhost:5000/capsule/upcoming
+
+### Get Upcoming Capsules - Cache Disable
+
+GET http://localhost:5000/capsule/upcoming/withoutCache
