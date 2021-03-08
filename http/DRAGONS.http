@@ -1,0 +1,15 @@
+### Getting all dragon Lists - Cache Enable
+
+GET http://localhost:5000/dragon/list
+
+### Getting all dragon Lists - Cache Disable
+
+GET http://localhost:5000/dragon/list/withoutCache
+
+### Get dragon with id - Cahce Enable
+
+GET http://localhost:5000/dragon/dragon1
+
+### Get dragon with id - Cache Disable
+
+GET http://localhost:5000/dragon/dragon1/withoutCache
