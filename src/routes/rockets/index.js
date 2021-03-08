@@ -1,9 +1,8 @@
 const express = require('express')
-const axios = require('axios')
 const { GET_CACHE, SET_CACHE, http } = require('../../helpers')
 const router = express.Router()
 
-router.get('/list', async (req, res) => {
+router.get('/list', async (_, res) => {
   try {
     const cachedResponse = await GET_CACHE('rockets')
     if (cachedResponse) {
@@ -11,16 +10,13 @@ router.get('/list', async (req, res) => {
       return
     }
     const respone = await http.get('rockets')
-    const saveResult = await SET_CACHE(
+    await SET_CACHE(
       'rockets',
       JSON.stringify(respone.data),
       'EX',
-      10
+      900
     )
-    console.log('new data cached', saveResult)
-    res.send(respone.data)
-    const data = await http.get('rockets')
-    res.status(200).send(data.data)
+    res.status(200).send(respone.data)
   } catch (err) {
     res.status(500).send(err.message)
   }
