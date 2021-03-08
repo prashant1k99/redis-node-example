@@ -7,6 +7,7 @@ const landpadRoute = require('./landingPads')
 const launchRoute = require('./launches')
 const missionRoute = require('./missions')
 const payloadRoute = require('./payloads')
+const roadsterRoute = require('./roadster')
 
 module.exports = {
   rocketRoutes,
@@ -17,5 +18,6 @@ module.exports = {
   landpadRoute,
   launchRoute,
   missionRoute,
-  payloadRoute
+  payloadRoute,
+  roadsterRoute
 }

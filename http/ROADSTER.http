@@ -1,0 +1,7 @@
+### Get roadster - Cahce Enable
+
+GET http://localhost:5000/roadster
+
+### Get roadster - Cache Disable
+
+GET http://localhost:5000/roadster/withoutCache
