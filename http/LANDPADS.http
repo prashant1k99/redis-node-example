@@ -1,0 +1,15 @@
+### Getting all landpad Lists - Cache Enable
+
+GET http://localhost:5000/landpad/list
+
+### Getting all landpad Lists - Cache Disable
+
+GET http://localhost:5000/landpad/list/withoutCache
+
+### Get landpad with id - Cahce Enable
+
+GET http://localhost:5000/landpad/LZ-1
+
+### Get landpad with id - Cache Disable
+
+GET http://localhost:5000/landpad/LZ-1/withoutCache

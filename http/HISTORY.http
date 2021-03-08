@@ -1,0 +1,15 @@
+### Getting all history Lists - Cache Enable
+
+GET http://localhost:5000/history/list
+
+### Getting all history Lists - Cache Disable
+
+GET http://localhost:5000/history/list/withoutCache
+
+### Get history with id - Cahce Enable
+
+GET http://localhost:5000/history/1
+
+### Get history with id - Cache Disable
+
+GET http://localhost:5000/history/1/withoutCache
